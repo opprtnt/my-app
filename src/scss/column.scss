@@ -1,0 +1,13 @@
+@use "./colors";
+
+.column {
+  margin-right: 10px;
+  padding: 12px 8px;
+  flex: 1 1 24%;
+  height: auto;
+  border-radius: 6px 6px 0px 0px;
+  background-color: colors.$light-gray-5;
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}

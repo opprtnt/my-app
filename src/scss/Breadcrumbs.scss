@@ -1,0 +1,30 @@
+@use "./colors";
+
+.nav {
+  margin-top: 13px;
+  &__link {
+    font-size: 12px;
+    line-height: 16px;
+    color: colors.$mid-gray-2;
+    &:nth-child(1)::before {
+      content: "";
+      width: 0;
+      margin: 0;
+      background-image: none;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/breadcrumbs.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 12px;
+      height: 11px;
+      margin: 0 4px;
+    }
+  }
+}
+.active {
+  color: colors.$dark-gray-2;
+  display: inline-block;
+}

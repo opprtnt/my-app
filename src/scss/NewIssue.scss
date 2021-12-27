@@ -1,0 +1,85 @@
+@use "_colors.scss";
+@import "./fonts.css";
+
+.form {
+  font-size: 14px;
+  margin-top: 22px;
+  width: 535px;
+  ::placeholder {
+    font-family: "Inter", sans-serif;
+    color: colors.$mid-gray-4;
+  }
+  svg {
+    fill: colors.$mid-gray-2;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+  }
+  &__title {
+    display: block;
+    width: 100%;
+    padding: 4px 10px;
+    border: 1px solid colors.$light-gray-2;
+    border-radius: 6px;
+    line-height: 24px;
+  }
+  &__row {
+    display: flex;
+    margin: 22px 0;
+  }
+  &__select {
+    font-size: 14px !important;
+    font-family: "Inter", sans-serif !important;
+    color: colors.$mid-gray-4 !important;
+    width: 125px;
+    margin-right: 10px !important;
+    padding: 4px 10px !important;
+    position: relative;
+    border: 1px solid colors.$light-gray-2 !important;
+    border-radius: 6px;
+  }
+  &__status {
+    font-size: 14px !important;
+    font-family: "Inter", sans-serif !important;
+    color: colors.$mid-gray-4 !important;
+    width: 125px;
+    padding: 4px 10px !important;
+    border: 1px solid colors.$light-gray-2 !important;
+    border-radius: 6px;
+  }
+  &__points {
+    width: 125px;
+    padding: 4px 10px;
+    margin-right: 10px;
+    border: 1px solid colors.$light-gray-2;
+    border-radius: 6px;
+  }
+  &__description {
+    font: inherit;
+    resize: none;
+    margin-bottom: 22px;
+    padding: 4px 10px;
+    width: 100%;
+    height: 122px;
+    border: 1px solid colors.$light-gray-2;
+    border-radius: 6px;
+    color: inherit;
+  }
+  &__btn {
+    padding: 4px 13px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: colors.$primary;
+    color: colors.$light-gray-5;
+    border-radius: 6px;
+  }
+  &__error-block {
+    font-size: 0.75rem;
+    position: absolute;
+    color: red;
+  }
+  .MuiInputBase-input {
+    line-height: 24px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,48 @@
+@use "./colors";
+
+.task {
+  margin-top: 20px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+  &__chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+  }
+  &__tag {
+    width: 25px;
+    height: 25px;
+    margin-right: 13px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: colors.$light-gray-3;
+  }
+  &__state {
+    margin-right: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: colors.$mid-gray-2;
+  }
+  &__edit-btn {
+    padding: 4px 12px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: colors.$light-gray-5;
+    background-color: colors.$orange;
+  }
+  &__text {
+    line-height: 32px;
+    color: colors.$mid-gray-2;
+  }
+}
